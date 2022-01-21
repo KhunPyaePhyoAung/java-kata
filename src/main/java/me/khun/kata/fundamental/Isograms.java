@@ -21,7 +21,7 @@ public class Isograms {
         Set<Character> charSet = new HashSet<>();
         final String LOWERCASE = str.toLowerCase();
 
-        for (int i = 0; i < str.length(); i++)
+        for (int i = 0; i < LOWERCASE.length(); i++)
             if (!charSet.add(LOWERCASE.charAt(i)))
                 return false;
 

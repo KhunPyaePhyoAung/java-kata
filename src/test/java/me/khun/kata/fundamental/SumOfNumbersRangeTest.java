@@ -14,5 +14,8 @@ public class SumOfNumbersRangeTest {
         assertEquals(0, SumOfNumbersRange.getSum(-1, 1));
         assertEquals(12, SumOfNumbersRange.getSum(5, -2));
         assertEquals(12, SumOfNumbersRange.getSum(-2, 5));
+        assertEquals(-3, SumOfNumbersRange.getSum(-3, -3));
+        assertEquals(3, SumOfNumbersRange.getSum(3, 3));
+
     }
 }
