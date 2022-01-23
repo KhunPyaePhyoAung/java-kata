@@ -17,11 +17,6 @@ package me.khun.kata.fundamental;
  */
 public class SumOfNumbersRange {
     public static int getSum(int a, int b) {
-
-        if (a > b)
-            return getSum(b, a);
-
-        else
-            return (a + b) * ( (Math.abs(a - b) + 1) ) / 2;
+        return (a + b) * ( (Math.abs(a - b) + 1) ) / 2;
     }
 }
