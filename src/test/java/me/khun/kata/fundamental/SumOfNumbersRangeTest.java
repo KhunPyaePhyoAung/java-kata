@@ -7,8 +7,7 @@ import static org.junit.Assert.assertEquals;
 public class SumOfNumbersRangeTest {
 
     @Test
-    public void Test1()
-    {
+    public void Test1() {
         assertEquals(-1, SumOfNumbersRange.getSum(0, -1));
         assertEquals(1, SumOfNumbersRange.getSum(0, 1));
         assertEquals(0, SumOfNumbersRange.getSum(-1, 1));

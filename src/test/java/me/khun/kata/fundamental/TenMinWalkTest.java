@@ -37,19 +37,19 @@ public class TenMinWalkTest {
 
     @Test
     public void Test2() {
-        assertEquals("Should return false if walk is too short.  ", false, TenMinWalk.isValid(fail[0]));
-        assertEquals("Should return false if walk is too short.  ", false, TenMinWalk.isValid(fail[1]));
-        assertEquals("Should return false if walk is too long.  ", false, TenMinWalk.isValid(fail[2]));
-        assertEquals("Should return false if walk is too long.  ", false, TenMinWalk.isValid(fail[3]));
-        assertEquals("Should return false if walk does not bring you back to start.  ", false, TenMinWalk.isValid(fail[4]));
-        assertEquals("Should return false if walk does not bring you back to start.  ", false, TenMinWalk.isValid(fail[5]));
-        assertEquals("Should return false if walk does not bring you back to start.  ", false, TenMinWalk.isValid(fail[6]));
-        assertEquals("Should return false if walk does not bring you back to start.  ", false, TenMinWalk.isValid(fail[7]));
-        assertEquals("Should return false if walk does not bring you back to start.  ", false, TenMinWalk.isValid(fail[8]));
-        assertEquals("Should return false if walk does not bring you back to start.  ", false, TenMinWalk.isValid(fail[9]));
-        assertEquals("Should return true for a valid walk.  ", true, TenMinWalk.isValid(pass[0]));
-        assertEquals("Should return true for a valid walk.  ", true, TenMinWalk.isValid(pass[1]));
-        assertEquals("Should return true for a valid walk.  ", true, TenMinWalk.isValid(pass[2]));
+        assertFalse("Should return false if walk is too short.  ", TenMinWalk.isValid(fail[0]));
+        assertFalse("Should return false if walk is too short.  ", TenMinWalk.isValid(fail[1]));
+        assertFalse("Should return false if walk is too long.  ", TenMinWalk.isValid(fail[2]));
+        assertFalse("Should return false if walk is too long.  ", TenMinWalk.isValid(fail[3]));
+        assertFalse("Should return false if walk does not bring you back to start.  ", TenMinWalk.isValid(fail[4]));
+        assertFalse("Should return false if walk does not bring you back to start.  ", TenMinWalk.isValid(fail[5]));
+        assertFalse("Should return false if walk does not bring you back to start.  ", TenMinWalk.isValid(fail[6]));
+        assertFalse("Should return false if walk does not bring you back to start.  ", TenMinWalk.isValid(fail[7]));
+        assertFalse("Should return false if walk does not bring you back to start.  ", TenMinWalk.isValid(fail[8]));
+        assertFalse("Should return false if walk does not bring you back to start.  ", TenMinWalk.isValid(fail[9]));
+        assertTrue("Should return true for a valid walk.  ", TenMinWalk.isValid(pass[0]));
+        assertTrue("Should return true for a valid walk.  ", TenMinWalk.isValid(pass[1]));
+        assertTrue("Should return true for a valid walk.  ", TenMinWalk.isValid(pass[2]));
 
         //Additional tests
 

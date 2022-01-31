@@ -13,16 +13,16 @@ public class XbonacciTest {
     private Xbonacci variabonacci;
 
     @Before
-    public void setUp() throws Exception {
+    public void setUp() {
         variabonacci = new Xbonacci();
     }
 
     @After
-    public void tearDown() throws Exception {
+    public void tearDown() {
         variabonacci = null;
     }
 
-    private double precision = 1e-10;
+    private final double precision = 1e-10;
 
     @Test
     public void basicTests() {
